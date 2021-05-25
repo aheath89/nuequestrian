@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo&family=Kodchasan&display=swap');
+/* 
+KoHo for headers, Kodchasan for other text
+*/
+
+body {
+    background-color: #F5E4E0;
+    color: #4E2A84;
+    margin: 0;
+    
+}
+
+h1, h2 {
+    font-family: 'KoHo', sans-serif;
+}
+
+p, a {
+    font-family: 'Kodchasan', sans-serif;
+}
+
+header {
+    background-color: #4E2A84;
+    color: #F5E4E0;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #E5C3D1;
+    
+    overflow: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #4E2A84;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar a:hover {
+    color: #f1f1f1;
+}
+
+#sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    right: 10;
+    margin-top: 10px;
+}
+  
+.openbtn:hover {
+    background-color: #444;
+}
+
+.carousel {
+    width: 60%;
+    height: 50%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+
+.featured_image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured_image > img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    
+}
+
+.prev {
+    right: 90%;
+}
+
+.next {
+    left: 90%;
+}
+
+.container > div {
+    border: 5px solid #C97B84;
+    background-color: #C97B84;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+div.selected {
+    border-color: #974E49;
+    background-color: #974E49;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
