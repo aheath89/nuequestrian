@@ -1,13 +1,12 @@
 var side = false;
 
-document.getElementById("main").onclick = (ev) => {
+document.querySelector(".main").onclick = (ev) => {
     if (side && ev.target.className != "openbtn") {
         closeSide();
     }
 }
 
 document.querySelector("header").onclick = () => {
-    console.log("test")
     if (side) {
         closeSide();
     }
@@ -21,7 +20,7 @@ function openSide() {
 
 function closeSide() {
     document.getElementById("sidebar").style.width = "0";
-    document.getElementById("main").style.marginRight = "0";
+    document.querySelector(".main").style.marginRight = "0";
     document.querySelector(".openbtn").style.display = "block";
     side = false;
 }

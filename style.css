@@ -11,12 +11,63 @@ body {
     
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: 'KoHo', sans-serif;
 }
 
-p, a {
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 24px;
+    color: #C97B84;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+p, a, li {
     font-family: 'Kodchasan', sans-serif;
+}
+
+a {
+    color: #C97B84;
+}
+
+a:hover {
+    color: white;
+}
+
+p, li, h4 {
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 25px;
+    margin: 0px;
+}
+
+
+
+ul > *{
+    padding-top: 15px;
+}
+
+#infotext {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 20%;
+    padding: 20px;
 }
 
 header {
@@ -36,6 +87,11 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#main2 {
+    display: flex;
+    flex-direction: column;
 }
 
 #sidebar {
@@ -102,26 +158,19 @@ h2 {
 
 .featured_image {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .featured_image > img {
-    width: 100%;
-    height: auto;
+    height: 60vh;
+    border: 12px solid #C97B84;
+    border-radius: 1.5%;
 }
 
-.prev, .next {
-    position: absolute;
-    
-}
-
-.prev {
-    right: 90%;
-}
-
-.next {
-    left: 90%;
+.next, .prev {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .container > div {
@@ -139,4 +188,5 @@ div.selected {
 .container {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }

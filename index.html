@@ -11,30 +11,36 @@
         <div id="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times;</a>
             <a href="index.html">Home</a>
-            <a href="#">Potential Members</a>
-            <a href="#">Current Members</a>
-            <a href="#">FAQ</a>
+            <a href="potential.html">Potential Members</a>
+            <a href="current.html">Current Members</a>
+            <a href="faq.html">FAQ</a>
             <a href="#">Contact Us</a>
         </div>
-        <div id="main">
+        <div class="main" id="main">
             <button class="openbtn" onclick="openSide()">&#9776;</button>
             <h2>Home Page</h2>
             <section class="carousel">
                 <div class="featured_image">
-                    <img src="homepage_images/1.jpeg" alt="image here">
-                    <button class="prev">&lsaquo;</button>
-                    <button class="next">&rsaquo;</button>
+                    <img id="featImg" src="homepage_images/1.jpeg" alt="image here">
+                    
                 </div>
                 <div class="container">
-                    <div id="1" class="selected"></div>
-                    <div id="2"></div>
-                    <div id="3"></div>
-                    <div id="4"></div>
-                    <div id="5"></div>
+                    <button class="prev">&lsaquo;</button>
+                    <div id="0" class="selected"></div>
+                    <div id="1" class="unselected"></div>
+                    <div id="2" class="unselected"></div>
+                    <div id="3" class="unselected"></div>
+                    <div id="4" class="unselected"></div>
+                    <button class="next">&rsaquo;</button>
                 </div>
             </section>
-            <p>~Insert Info Text Here~</p>
+            <div id="infotext">
+                <img id="logo" src="logo.webp" alt="logo">
+                <p>The Northwestern University Equestrian Team is a club-level hunt seat equitation team that competes on the Intercollegiate Horse Shows Association circuit. Our team also offers weekly lessons, in addition to our competitions.</p>
+                <p>Our team was founded in 2008, and we currently train with Val Buesching, owner and head trainer at On Course Riding Academy, located at Birch Hill Farm in Wauconda, IL. </p>
+            </div>
         </div>
     </body>
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="carousel.js"></script>
 </html>
