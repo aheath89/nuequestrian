@@ -6,7 +6,8 @@
     </head>
     <body>
         <header>
-            <h1>Northwestern Equestrian Team</h1>
+            <h1>Information for Current Members</h1>
+            <button class="openbtn" onclick="openSide()">&#9776;</button>
         </header>
         <div id="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeSide()">&times;</a>
@@ -14,22 +15,26 @@
             <a href="potential.html">Potential Members</a>
             <a href="current.html">Current Members</a>
             <a href="faq.html">FAQ</a>
-            <a href="#">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
         <div class="main" id="main2">
-            <button class="openbtn" onclick="openSide()">&#9776;</button>
-            <h2>Info for Current Members</h2>
             <p>For information about how to officially join our team, please view the information on the 
                 <a href="potential.html">Potential Members</a> page for more info.</p>
-            <h3>IHSA</h3>
-            <p>If you plan on competing in any IHSA shows, you'll need to renew your IHSA account. If you don't have an IHSA
-                account, then please refer to the last bullet on the <a href="potential.html">Potential Members</a> page.
-            </p>
-            <ul>
-                <li>To renew your account, you must renew your Individual Membership 
-                    <a href="https://www.ihsainc.com/join/renewing-membership">here.</a></li>
-                <li>Then, you'll have to pay your annual IHSA membership fee (don't worry, this will be reimbursed!).</li>
-            </ul>
+                <h3>IHSA</h3>
+            <div id="ihsa">
+                <div id="text">
+                    <p>If you plan on competing in any IHSA shows, you'll need to renew your IHSA account. If you don't have an IHSA
+                        account, then please refer to the last bullet on the <a href="potential.html">Potential Members</a> page.
+                    </p>
+                    <ul>
+                        <li>To renew your account, you must renew your Individual Membership 
+                            <a href="https://www.ihsainc.com/join/renewing-membership">here.</a></li>
+                        <li>Then, you'll have to pay your annual IHSA membership fee (don't worry, this will be reimbursed!).</li>
+                    </ul>
+                </div>
+                <img id="logo" src="ihsa.png" alt="IHSA logo">
+            </div>
+            
             <h3>Van Certification</h3>
             <p>For every lesson, show, or other off-site team outing, there MUST be at least one certified driver per van. 
                 Every year, many lessons need to be cancelled due to lack of certified drivers. Therefore, it's extremely important

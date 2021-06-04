@@ -1,13 +1,13 @@
 var side = false;
 
-document.querySelector(".main").onclick = (ev) => {
-    if (side && ev.target.className != "openbtn") {
+document.querySelector(".main").onclick = () => {
+    if (side) {
         closeSide();
     }
 }
 
-document.querySelector("header").onclick = () => {
-    if (side) {
+document.querySelector("header").onclick = (ev) => {
+    if (side && ev.target.className != "openbtn") {
         closeSide();
     }
 }

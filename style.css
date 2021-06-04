@@ -8,10 +8,10 @@ body {
     background-color: #F5E4E0;
     color: #4E2A84;
     margin: 0;
-    
+    overflow-x: hidden
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: 'KoHo', sans-serif;
 }
 
@@ -20,22 +20,23 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
 }
 
-h4 {
-    font-size: 24px;
-    color: #C97B84;
-    padding-bottom: 10px;
-    padding-top: 20px;
+h5 {
+    font-size: 25px;
+    padding-left: 20px;
 }
+
+
 
 p {
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-p, a, li {
+p, a, li, input, label {
     font-family: 'Kodchasan', sans-serif;
 }
 
@@ -54,7 +55,12 @@ p, li, h4 {
     margin: 0px;
 }
 
-
+h4 {
+    font-size: 27px;
+    color: #C97B84;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
 
 ul > *{
     padding-top: 15px;
@@ -68,6 +74,79 @@ ul > *{
 #logo {
     width: 20%;
     padding: 20px;
+}
+
+#ihsa {
+    display: grid;
+    grid-template-rows: 5fr;
+    grid-template-columns: 5fr 2fr;
+    grid-template-areas: 
+        "a b";
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.facebook, .instagram {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+form {
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: flex-end;
+}
+
+
+input, label, textarea {
+    font-size: 20px;
+    width: 500px;
+}
+
+.field {
+    padding-bottom: 20px;
+}
+
+textarea {
+    height: 300px;
+}
+
+.mailbtn {
+    width: 100px;
+    font-size: 20px;
+    background-color: #4E2A84;
+    color: white;
+}
+
+#msg {
+    height: 300px;
+}
+
+.facebook:hover, .instagram:hover {
+    opacity: 70%;
+}
+
+#ihsa #text {
+    grid-area: a;
+}
+
+#ihsa img {
+    grid-area: b;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
 }
 
 header {
