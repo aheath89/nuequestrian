@@ -64,6 +64,7 @@ h4 {
 
 ul > *{
     padding-top: 15px;
+    padding-left: 15px;
 }
 
 #infotext {
@@ -76,30 +77,57 @@ ul > *{
     padding: 20px;
 }
 
-#ihsa {
-    display: grid;
-    grid-template-rows: 5fr;
-    grid-template-columns: 5fr 2fr;
-    grid-template-areas: 
-        "a b";
+#ihsalogo {
+    width: 20%;
+    padding: 20px;
+    background-color: white;
+    border: 12px solid #C97B84;
+    border-radius: 1.5%;
 }
+
 
 .social {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     padding-right: 10px;
     padding-top: 10px;
     align-items: center;
 }
 
+#social {
+    display: flex;
+    flex-direction: row;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+}
+
 .facebook, .instagram {
     padding: 10px;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
 }
 
+#potentialimg1 {
+    float: left;
+    width: 25%;
+    border: 12px solid #C97B84;
+    border-radius: 1.5%;
+    margin: 20px;
+    margin-right: 50px;
+}
+
+#potentialimg2 {
+    float: right;
+    width: 25%;
+    border: 12px solid #C97B84;
+    border-radius: 1.5%;
+    margin: 20px;
+}
 
 form {
     padding-left: 40px;
@@ -128,6 +156,7 @@ textarea {
     font-size: 20px;
     background-color: #4E2A84;
     color: white;
+    margin-top: 10px;
 }
 
 #msg {
@@ -138,15 +167,12 @@ textarea {
     opacity: 70%;
 }
 
-#ihsa #text {
-    grid-area: a;
-}
+
 
 #ihsa img {
-    grid-area: b;
-    width: 90%;
-    justify-self: center;
-    align-self: center;
+    width: 20%;
+    float: right;
+    margin: 20px;
 }
 
 header {

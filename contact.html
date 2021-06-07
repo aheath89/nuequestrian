@@ -19,29 +19,34 @@
             <a href="contact.html">Contact Us</a>
         </div>
         <div class="main" id="main2">
-            <div class="social">
+            <!--<div class="social">
                 <img src="facebook.png" class="facebook" alt="facebook icon" onclick="window.open('https://www.facebook.com/nuequestrian/');">
                 <img src="instagram.png" class="instagram" alt="instagram icon" onclick="window.open('https://www.instagram.com/nuequestrian/?hl=en');">
                 
-            </div>
+            </div>-->
             <h5>Thank you for your interest in the Northwestern Equestrian Team! To contact us, please fill out the following
                 form!
             </h5>
-            <form action="mailto:nuequestrian@gmail.com">
-                <div class="field">
-                    <label class="label" for="subject">Subject:</label>
-                    <input name="subject" id="subject" type="text" class="input" value="">
+            <div id="social">
+                <form>
+                    <label for="subj">Subject:</label>
+                    <input id="subj" value="">
+                    <label for="body">Message:</label>
+                    <textarea id="body"></textarea>
+                    <button id="submit" class="mailbtn" onclick="submitMail()">Submit</button>
+                </form>
+                <div class="social">
+                    <p>Follow us on social media to stay up-to-date with the team!</p>
+                    <div id="icons">
+                        <img src="facebook.png" class="facebook" alt="facebook icon" onclick="window.open('https://www.facebook.com/nuequestrian/');">
+                        <img src="instagram.png" class="instagram" alt="instagram icon" onclick="window.open('https://www.instagram.com/nuequestrian/?hl=en');">
+                    </div>
                 </div>
-                <div class="field">
-                    <label class="label" for="body">Message:</label>
-                    <textarea class="textarea" name="body" id="body"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Submit" class="mailbtn">
-                </div>
-            </form>
+            </div>
+            
         </div>
     </body>
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
     
 </html>
