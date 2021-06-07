@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5 {
     font-family: 'KoHo', sans-serif;
 }
 
+h1.mob {
+    display: none;
+}
+
 h2 {
     font-size: 30px;
 }
@@ -72,9 +76,13 @@ ul > *{
     align-items: center;
 }
 
-#logo {
+.logo {
     width: 20%;
     padding: 20px;
+}
+
+#moblogo {
+    display: none;
 }
 
 #ihsalogo {
@@ -294,4 +302,44 @@ div.selected {
     display: flex;
     justify-content: center;
     padding-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    header {
+        height: 15%;
+    }
+    #featImg {
+        height: 40vh;
+    }
+}
+ 
+@media (max-width: 600px) {
+    header {
+        height: 10%;
+        width: 100vw;
+    }
+    h1.reg {
+        display: none;
+    }
+    h1.mob {
+        display: block;
+    }
+    #logo {
+        display: none;
+    }
+    #moblogo {
+        display: block;
+    }
+    #featImg {
+        height: 20vh;
+    }
+    #infotext {
+        flex-direction: column;
+    }
+    p {
+        font-size: 4vw;
+    }
+    #social {
+        flex-direction: column;
+    }
 }
